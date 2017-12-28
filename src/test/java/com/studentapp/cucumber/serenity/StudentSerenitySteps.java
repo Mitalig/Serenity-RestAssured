@@ -7,7 +7,7 @@ import net.thucydides.core.annotations.Step;
 
 public class StudentSerenitySteps {
 	
-	@Step
+	@Step("It will return the post request reponse having body:{0}")
 	public ValidatableResponse genericPost (String body)  {
 		
 		
@@ -20,7 +20,7 @@ public class StudentSerenitySteps {
 		
 	}
 	
-	@Step
+	@Step("It will return the get request response having url:{0} ")
 	public ValidatableResponse genericGet (String url)  {	
 		
 		return SerenityRest.rest().given()
@@ -30,7 +30,7 @@ public class StudentSerenitySteps {
 						
 	}
 	
-	@Step
+	@Step("It will return the put request response having url:{0} and body:{1} ")
 	public ValidatableResponse genericPut (String url, String body)  {	
 		
 		return SerenityRest.rest().given().contentType(ContentType.JSON)
