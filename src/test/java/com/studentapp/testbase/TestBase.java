@@ -9,7 +9,7 @@ public class TestBase {
 	@BeforeClass
 	public static void initializeCrudTest() {
 		
-		RestAssured.baseURI="http://localhost:8088/student";
+		RestAssured.baseURI="http://localhost:8089/student";
 		
 	}
 	

@@ -11,13 +11,9 @@ import com.studentapp.cucumber.serenity.StudentSerenitySteps;
 import com.studentapp.testbase.TestBase;
 import com.studentapp.utils.TestUtils;
 
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.assertThat;
 
-import io.restassured.http.ContentType;
 import net.serenitybdd.junit.runners.SerenityRunner;
 
-import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
 
